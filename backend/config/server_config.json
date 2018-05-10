@@ -1,0 +1,6 @@
+{
+    "ecg_path": ".\\backend\\api\\data\\signals\\A*.hea",
+    "dirichlet_path": ".\\backend\\api\\data\\models\\dirichlet",
+    "hmm_path": ".\\backend\\api\\data\\models\\hmm\\hmm_model.dill",
+    "logger_config_path": ".\\backend\\config\\logger_config.json"
+}
