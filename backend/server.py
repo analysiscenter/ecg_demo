@@ -10,13 +10,18 @@ from flask_socketio import SocketIO
 from api.api import create_namespace
 
 
-def get_server_config(server_config_path, required_keys):
-    with open(server_config_path, encoding="utf-8") as server_config:
-        server_config = json.load(server_config)
-    key_diff = set(server_config) - required_keys
+def get_server_config(server_config_path, required_keys, path_keys):
+    with open(server_config_path, encoding="utf-8") as config_file:
+        config = json.load(config_file)
+    key_diff = set(config) - required_keys
     if key_diff:
         raise KeyError("{} keys are not found in the server config".format(sorted(key_diff)))
-    server_config = {key: server_config[key] for key in required_keys}
+    server_config = {}
+    for key in required_keys:
+        value = config[key]
+        if key in path_keys:
+            value = os.path.normcase(value)
+        server_config[key] = value
     return server_config
 
 
@@ -40,7 +45,7 @@ def get_configs():
         "hmm_path",
         "logger_config_path",
     }
-    server_config = get_server_config(args.config, REQUIRED_KEYS)
+    server_config = get_server_config(args.config, REQUIRED_KEYS, REQUIRED_KEYS)
     logger_config_path = server_config.pop("logger_config_path")
     logger_config = get_logger_config(logger_config_path)
     return server_config, logger_config
