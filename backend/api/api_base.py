@@ -20,8 +20,8 @@ class BaseNamespace(Namespace):
         try:
             payload = method(data, meta)
             if event_out is not None:
-                self.emit(event_out, payload)
+                self.emit(event_out, payload, room=request.sid)
                 self.logger.info("Sending response {}. Meta: {}".format(event_out, meta))
         except Exception as error:
-            self.emit("ERROR", str(error))
+            self.emit("ERROR", str(error), room=request.sid)
             self.logger.exception(error)
