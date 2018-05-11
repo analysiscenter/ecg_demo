@@ -1,0 +1,174 @@
+html {
+  font-size: 4vmin;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 4vmin;
+  margin: 0;
+}
+
+.page {
+  padding-top: 0.25rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100;
+}
+
+.page div {
+  margin: 0;
+}
+
+.page span {
+  font-size: 0.6rem;
+}
+
+.page .centered-text {
+  text-align: center;
+  padding-top: 1rem;
+  flex-grow: 100;
+}
+
+.page .row {
+  padding: 0;
+  font-size: 0.6rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.page .headline {
+  margin-top: 0.25rem;
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+}
+
+.page .slider {
+	width: 40%;
+	margin: auto;
+}
+
+.page .left-arrow {
+	position: absolute;
+	font-size: 2rem;
+	top: 7.5rem;
+	left: 1.5rem;
+}
+
+.page .right-arrow {
+	position: absolute;
+	font-size: 2rem;
+	top: 7.5rem;
+	right: 1.5rem;
+}
+
+.page .ecg-name {
+	position: absolute;
+	font-size: 0.8rem;
+	top: 5rem;
+	left: 18%;
+	z-index: 100;
+}
+
+.page .slider.slider-horizontal .slider-selection {
+    background: #337ab7;
+ }
+
+.page .slider.slider-horizontal .slider-handle {
+	background: #337ab7;
+    border:2px solid #fff;
+}
+
+.page button.get-inference {
+	padding: 0;
+	margin: auto;
+	margin-top: 3rem;
+	width: 7.4rem;
+	height: 1.3rem;
+	font-size: 0.6rem;
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 100;
+    text-align: center;
+}
+
+.page .center-view {
+  text-align: center;
+  margin: auto;
+}
+
+.page .bar-chart {
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.page .ecg-container {
+	height: 10rem;
+	width: 100%;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.page .ecg-results {
+	margin-top: 2rem;
+	width: 199%;
+    text-align: center;
+}
+
+.page .ecg-results h3 {
+	font-size: 0.8rem;
+	font-weight: 100;
+	margin: auto;
+}
+
+.page .ecg-results .heart-rate {
+	color: #dd3333;
+	margin-top: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.page .ecg-results .heart-rate .fa {
+	font-size: 2rem;
+	margin-top: 1rem;
+	margin-right: 0.2rem;
+}
+
+.page .ecg-results .fa + span {
+	font-size: 0.8rem;
+}
+
+.page .ecg-results .intervals {
+	margin-top: 1rem;
+}
+
+.CircularProgressbar {
+ /*  * This fixes an issue where the CircularProgressbar svg has
+   * 0 width inside a "display: flex" container, and thus not visible.
+   *
+   * If you're not using "display: flex", you can remove this style.
+   */
+  width: 4rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #3e98c7;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #3e98c7;
+  font-size: 0.9rem;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
