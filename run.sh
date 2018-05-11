@@ -17,7 +17,7 @@ python3 backend/server.py &
 
 printf "Launching server frontend\n"
 cd "$script_path/frontend"
-yarn start  > /dev/null 2>&1 &
+yarn start > /dev/null 2>&1 &
 
 printf "Press Ctrl+C to terminate the server\n"
 cat
