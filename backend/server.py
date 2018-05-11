@@ -11,14 +11,14 @@ from api.api import create_namespace
 
 
 def get_server_config(server_config_path, required_keys, path_keys):
-    with open(server_config_path, encoding="utf-8") as server_config:
-        server_config = json.load(server_config)
-    key_diff = set(server_config) - required_keys
+    with open(server_config_path, encoding="utf-8") as config_file:
+        config = json.load(config_file)
+    key_diff = set(config) - required_keys
     if key_diff:
         raise KeyError("{} keys are not found in the server config".format(sorted(key_diff)))
     server_config = {}
     for key in required_keys:
-        value = server_config[key]
+        value = config[key]
         if key in path_keys:
             value = os.path.normcase(value)
         server_config[key] = value
