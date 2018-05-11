@@ -1,273 +1,159 @@
 html {
-    font-size: 4vmin;
+  font-size: 4vmin;
 }
 
 body {
-    line-height: 1;
-    font-family: 'Roboto', sans-serif;
-    font-size: 4vmin;
-}
-
-.main-menu {
-	margin: 0;
-	padding: 0;
-	background: #337ab7;
-	font-size: 0.75rem;
-	border: 0;
-	min-height: 2rem;
-	border-radius: 0;
-
-}
-.main-menu .container {
-	margin: 0;
-	padding: 0;
-}
-
-.main-menu a {
-	display: inline-block;
-	width: 100%;
-	height: 2rem;
-	padding: 0.6rem 0.75rem;
-	margin: 0;
-	color: #ffffff;
-	text-decoration: none;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-weight: 100;
-	text-align: center;
-}
-
-.main-menu a:hover {
-	text-decoration: none;
-	color: #337ab7;
-	background: #eeeeee;
-}
-.main-menu a .fa {
-	margin-right: 0.2rem;
-}
-
-.main-menu a.selected {
-	background: #ffffff;
-	color: #337ab7;
-	font-weight: 700;
-}
-
-.main-menu .menu-item {
-	padding: 0;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 4vmin;
+  margin: 0;
 }
 
 .page {
-	padding: 0 0 1rem 0;
+  padding-top: 0.25rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100;
 }
 
-.page.main {
-	padding-top: 1rem;
-}
-.page.main .row {
-    text-align: center;
-}
-.page.main .fa.big {
-    font-size: 10rem;
+.page div {
+  margin: 0;
 }
 
-.page.item {
-	padding-top: 0;
+.page span {
+  font-size: 0.6rem;
 }
 
-.page.loading {
-	font-size: 3rem;
+.page .centered-text {
+  text-align: center;
+  padding-top: 1rem;
+  flex-grow: 100;
 }
 
-.page .item {
-	color: #337ab7;
-	text-align: center;
-	cursor: pointer;
+.page .row {
+  padding: 0;
+  font-size: 0.6rem;
+  margin-right: 0;
+  margin-left: 0;
 }
 
-.page .item div {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-flow: column wrap;
-	align-content: space-between;
-	padding-top: 0.2rem;
-	padding-bottom: 0rem;
+.page .headline {
+  margin-top: 0.25rem;
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
 }
 
-.page .item a {
-	text-decoration: none;
-}
-.page .item .fa {
-	font-size: 4rem;
-}
-.page .item .name {
-	font-size: 1.5rem;
-	font-weight: 100;
-	user-select: none;
+.page .slider {
+	width: 40%;
+	margin: auto;
 }
 
-.page .item:hover {
-	background: #eeeeee;
-}
-
-.page.item .row .row {
-	margin: 0;
-}
-
-.page.item h2 {
-	font-size: 1rem;
-	margin-top: 0.5rem;
-}
-
-.page.item .image-viewer {
-	text-align: center;
-	display: flex;
-}
-
-.page.item .image-viewer .btn.toggle {
-	margin: 0.2rem 0.5rem;
-}
-
-.page.item .image-viewer div.btn.toggle:nth-child(1) {
-	margin-left: 0;
-}
-
-.page.item .image-viewer .btn.toggle .off {
-	text-decoration: line-through;
-}
-
-.page.item .image-viewer .image-viewer-with-slider {
-	display: flex;
-}
-
-.page.item .image-viewer .slider {
-	height: 100%;
-	margin-left: 0.2rem;
-	margin-top: 1.5rem;
-}
-
-.page.item .image-viewer .slider .slider-track {
-	width: 0.5rem;
-}
-
-.page.item .image-viewer .slider .slider-handle {
-	width: 0.8rem;
-	height: 0.8rem;
-	margin-left: 0.04rem;
-}
-
-.page.item button.get-inference {
+.page .left-arrow {
 	position: absolute;
-	top: 0;
-	left: 15rem;
+	font-size: 2rem;
+	top: 7.5rem;
+	left: 1.5rem;
+}
+
+.page .right-arrow {
+	position: absolute;
+	font-size: 2rem;
+	top: 7.5rem;
+	right: 1.5rem;
+}
+
+.page .ecg-name {
+	position: absolute;
+	font-size: 0.8rem;
+	top: 5rem;
+	left: 18%;
+	z-index: 100;
+}
+
+.page .slider.slider-horizontal .slider-selection {
+    background: #337ab7;
+ }
+
+.page .slider.slider-horizontal .slider-handle {
+	background: #337ab7;
+    border:2px solid #fff;
+}
+
+.page button.get-inference {
 	padding: 0;
-	margin-top: 0.4rem;
-	width: 5rem;
-	height: 1.2rem;
+	margin: auto;
+	margin-top: 3rem;
+	width: 7.4rem;
+	height: 1.3rem;
 	font-size: 0.6rem;
 	font-family: "Roboto Condensed", sans-serif;
 	font-weight: 100;
+    text-align: center;
 }
 
-.page.item button.get-inference_small {
-	display: inline-block;
-	top: 0;
-	left: 16rem;
-	padding: 0;
-	width: 6rem;
-    height: 2.5rem;
-    margin-right: 1rem;
-    margin-top: -4rem;
-	font-size: 3rem;
-	font-family: "Roboto Condensed", sans-serif;
-	font-weight: 100;
+.page .center-view {
+  text-align: center;
+  margin: auto;
 }
 
-.page.item button.get-inference .fa {
-	margin-right: 0.2rem;
+.page .bar-chart {
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
 }
 
-.page.mt {
-	cursor: default;
-	background: #eeeeee;
-	font-size: 1.1rem;
-	font-family: "Roboto Condensed", sans-serif;
-	font-weight: 100;
-}
-
-.page.mt .item button.get-inference_small .fa{
-	font-size: 1.5rem;
-	margin-right: 0.5rem;
-}
-.page.mt .image-viewer {
-	cursor: default;
-}
-.page.item .image-viewer .loading {
-	font-size: 3rem;
-}
-
-.page.ct.item .nodules h3 {
-	margin-top: 0.2rem;
-}
-
-.page.ct.item .nodules .list-group {
-	margin-top: 0.2rem;
-	font-size: 0.5rem;
-	cursor: pointer;
-	user-select: none;
-}
-
-.page.ct.item .nodules .list-group-item {
-	outline: none;
-}
-
-.page.ct.item .nodules .list-group-item:hover {
-	background: #eeeeee;
-}
-
-.page.ecg.item .heart {
+.page .ecg-container {
+	height: 10rem;
+	width: 100%;
 	text-align: center;
-	margin-top: -2rem;
-	margin-right: 15px;
-	font-size: 0.75rem;
-	font-weight: 100;
+	margin-top: 1rem;
 }
 
-.page.ecg.item .heart h3 {
-	font-size: 0.75rem;
-	font-weight: 100;
+.page .ecg-results {
+	margin-top: 2rem;
+	width: 199%;
+    text-align: center;
 }
 
-.page.ecg.item #plot .xtitle {
-	font-family: "Roboto Condensed", sans-serif;
-	font-size: 0.3rem;
+.page .ecg-results h3 {
+	font-size: 0.8rem;
 	font-weight: 100;
+	margin: auto;
 }
 
-.page.ecg.item .heart-rate {
+.page .ecg-results .heart-rate {
 	color: #dd3333;
+	margin-top: 0.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 
-.page.ecg.item .heart-rate .fa {
+.page .ecg-results .heart-rate .fa {
 	font-size: 2rem;
+	margin-top: 1rem;
 	margin-right: 0.2rem;
 }
 
-.page.ecg.item .heart-rate .fa + span {
-	font-size: 1rem;
+.page .ecg-results .fa + span {
+	font-size: 0.8rem;
+}
+
+.page .ecg-results .intervals {
+	margin-top: 1rem;
 }
 
 .CircularProgressbar {
-
  /*  * This fixes an issue where the CircularProgressbar svg has
    * 0 width inside a "display: flex" container, and thus not visible.
    *
    * If you're not using "display: flex", you can remove this style.
    */
-  width: 75%;
+  width: 4rem;
+  margin: auto;
+  margin-top: 1rem;
 }
 
 .CircularProgressbar .CircularProgressbar-path {

@@ -1,8 +1,8 @@
 {
-  "name": "demo_frontend",
+  "name": "ecg_demo",
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "https://github.com/analysiscenter/demo_frontend.git",
+  "repository": "https://github.com/analysiscenter/ecg_demo.git",
   "author": "Roman Kh <rhudor@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -10,9 +10,7 @@
   },
   "dependencies": {
     "chart.js": "^2.7.0",
-    "empty-module": "^0.0.2",
     "html-webpack-plugin": "^2.30.1",
-    "konva": "^1.6.8",
     "mobx": "^3.2.2",
     "mobx-react": "^4.2.2",
     "path": "^0.12.7",
@@ -24,7 +22,6 @@
     "react-circular-progressbar": "^0.2.1",
     "react-dom": "^15.6.1",
     "react-fa": "^4.2.0",
-    "react-konva": "^1.1.4",
     "react-router-dom": "^4.2.2",
     "socket.io-client": "^2.0.3",
     "webpack": "^3.5.5"

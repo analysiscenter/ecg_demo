@@ -1,8 +1,8 @@
 import Server from './server'
-import ECG_Store from './ecg_store'
+import EcgStore from './ecg_store'
 
 const server = new Server()
 server.init()
-const ecg_store = new ECG_Store(server)
+const ecgStore = new EcgStore(server)
 
-export { server, ecg_store}
+export { server, ecgStore }
