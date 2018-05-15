@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/analysiscenter/ecg_demo.git",
   "author": "Roman Kh <rhudor@gmail.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "start": "webpack-dev-server --port 5000 --host 0.0.0.0 --disable-host-check"
   },
